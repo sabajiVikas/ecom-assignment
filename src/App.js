@@ -35,7 +35,9 @@ const App = () => {
 
   // method for removing product
   const removeProduct = (product) => {
-    setCartItem(cartItem.filter((products) => products.id !== product.id));
+    setCartItem(
+      cartItem.filter((products) => products.productId !== product.productId)
+    );
     return toast("Product removed from cart...", { type: "error" });
   };
 
