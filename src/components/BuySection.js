@@ -9,9 +9,9 @@ import { Container, Row, Col } from "reactstrap";
 import ProductCard from "./ProductsCard";
 
 // pexel key
-const pexelsKey = process.env.REACT_APP_API_KEY;
+// const pexelsKey = process.env.REACT_APP_API_KEY;
 // pesel request url
-const url = `https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1`;
+// const url = `https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1`;
 // json url
 const jsonUrl = process.env.REACT_APP_JSON_LINK;
 

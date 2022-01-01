@@ -15,7 +15,7 @@ import {
 import StripeCheckout from "react-stripe-checkout";
 
 const ProductCart = ({ cartItem, purchaseNow, removeProduct }) => {
-  const [product, setProduct] = useState({
+  const [product] = useState({
     name: "productName",
     price: 500,
   });
@@ -57,7 +57,12 @@ const ProductCart = ({ cartItem, purchaseNow, removeProduct }) => {
           <ListGroupItem key={prod.productId}>
             <Row>
               <Col>
-                <img src={prod.cartTinyImg} className="mt-3" height={80} />
+                <img
+                  src={prod.cartTinyImg}
+                  className="mt-3"
+                  height={80}
+                  alt="cardImg"
+                />
               </Col>
               <Col>
                 <ListGroup className="text-center">
